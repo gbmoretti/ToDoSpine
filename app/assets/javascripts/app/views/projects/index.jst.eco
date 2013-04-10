@@ -1,12 +1,11 @@
-<h1>Listing Projects</h1>
+<h1>Projetos</h1>
 
 <% for project in @projects: %>
   <div class="item" data-id="<%= project.id %>">
-    <a data-type="show"><%= project.name %></a>
-    
-    <a data-type="edit">Edit</a> 
-    <a data-type="destroy">Destroy</a>
+    <a data-type="show"><%= project.name %></a>   
   </div>
 <% end %>
 
-<p><a data-type="new">New Project</a></p>
+<div class="actions">
+  <div class="action" data-type="new">+</a>
+</div>

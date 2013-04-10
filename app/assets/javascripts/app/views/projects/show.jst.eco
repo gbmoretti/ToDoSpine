@@ -1,7 +1,11 @@
-<h1>Show Project</h1>
+<h1><%= @name %></h1>
+<% if @deadline != null: %>
+  <p>Deadline: <%= @deadline %></p>
+<% end %>
+<%= @description %>
 
-<a data-type="edit">Edit</a> <a data-type="back">Back</a>
-
-<p>Name: <%= @name %></p>
-<p>Deadline: <%= @deadline %></p>
-<p>Description: <%= @description %></p>
+<div class="actions">
+  <div class="action" data-type="edit">e</div>
+  <div class="action" data-type="destroy">-</div>
+  <div class="action" data-type="back"><</div>
+</div>
